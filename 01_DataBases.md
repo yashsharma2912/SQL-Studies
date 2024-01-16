@@ -14,7 +14,7 @@ DROP DATABASE myDB;
 // to alter the databse
 ALTER DATABASE myDB READ ONLY = 1/0;
 ------------------------------------------
-/***************2. SQL Create,Select Table********/
+/***************2. SQL Create,Select,Reanme,Alter Table********/
 -------------------------------------------
 1)
 create table emplyoees(
@@ -39,3 +39,11 @@ RENAME COLUMN age to joining_date;
 ALTER TABLE emplyoees
 MODIFY COLUMN email VARCHAR(100);
 ------------------------------------------
+/***************3. SQL Change the position of Column********/
+-------------------------------------------
+1) Alter table Workers
+Modify age INT(2)
+AFTER last_name;
+
+SELECT * FROM workers;
+
