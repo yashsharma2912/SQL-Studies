@@ -13,6 +13,7 @@ DROP DATABASE myDB;
  
 // to alter the databse
 ALTER DATABASE myDB READ ONLY = 1/0;
+
 ------------------------------------------
 /***************2. SQL Create,Select,Reanme,Alter Table********/
 -------------------------------------------
@@ -38,6 +39,7 @@ RENAME COLUMN age to joining_date;
 5)
 ALTER TABLE emplyoees
 MODIFY COLUMN email VARCHAR(100);
+
 ------------------------------------------
 /***************3. SQL Change the position of Column********/
 -------------------------------------------
