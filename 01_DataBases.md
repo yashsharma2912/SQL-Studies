@@ -43,7 +43,8 @@ MODIFY COLUMN email VARCHAR(100);
 -------------------------------------------
 1) Alter table Workers
 Modify age INT(2)
-AFTER last_name;
+AFTER last_name; 
+// or use first/last to set the position of column
 
 SELECT * FROM workers;
 
