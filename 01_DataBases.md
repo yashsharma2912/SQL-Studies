@@ -14,7 +14,28 @@ DROP DATABASE myDB;
 // to alter the databse
 ALTER DATABASE myDB READ ONLY = 1/0;
 ------------------------------------------
-/***************2. SQL Create Table********/
+/***************2. SQL Create,Select Table********/
 -------------------------------------------
+1)
+create table emplyoees(
+    emp_id INT,
+    first_name VARCHAR(15),
+    last_name VARCHAR(15),
+    hourly_pay DECIMAL(5,2),
+    age INT(2),
+)
 
+2)
+SELECT * FROM emplyoees;
+
+3)  
+Rename table emplyoees to workers;
+
+4)
+ALTER TABLE emplyoees
+RENAME COLUMN age to joining_date;
+
+5)
+ALTER TABLE emplyoees
+MODIFY COLUMN email VARCHAR(100);
 ------------------------------------------
